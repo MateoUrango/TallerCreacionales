@@ -1,0 +1,18 @@
+# Archivos compilados (se regeneran al compilar)
+bin/
+out/
+*.class
+
+# Configuracion del editor y del servidor de Java en VS Code
+.vscode/
+.classpath
+.project
+.settings/
+
+# Otros IDEs
+.idea/
+*.iml
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
