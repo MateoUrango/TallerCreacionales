@@ -1,5 +1,3 @@
-// ProcesadorEfectivo.java
-/** Creador concreto para efectivo. */
 public class ProcesadorEfectivo extends ProcesadorPago {
 
     @Override

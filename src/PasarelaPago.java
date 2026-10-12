@@ -1,4 +1,3 @@
-// PasarelaPago.java
 public interface PasarelaPago {
     String nombre();
 

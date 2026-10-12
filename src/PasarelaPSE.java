@@ -1,5 +1,3 @@
-// PasarelaPSE.java
-/** Producto concreto: PSE aprueba siempre. */
 public class PasarelaPSE implements PasarelaPago {
 
     @Override

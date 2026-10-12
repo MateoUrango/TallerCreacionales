@@ -1,4 +1,3 @@
-// ItemPedido.java
 public class ItemPedido {
 
     private final String nombre;

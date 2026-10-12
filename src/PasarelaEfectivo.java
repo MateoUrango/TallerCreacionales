@@ -1,5 +1,3 @@
-// PasarelaEfectivo.java
-/** Producto concreto: efectivo aprueba siempre. */
 public class PasarelaEfectivo implements PasarelaPago {
 
     @Override
