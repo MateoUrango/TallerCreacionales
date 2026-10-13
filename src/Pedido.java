@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class Pedido {
@@ -18,11 +17,29 @@ public class Pedido {
         this.cliente = b.cliente;
         this.tipoEntrega = b.tipoEntrega;
         this.direccion = b.direccion;
-
-        this.items = Collections.unmodifiableList(new ArrayList<>(b.items));
+        this.items = new ArrayList<>(b.items);
         this.notas = b.notas;
         this.cupon = b.cupon;
         this.propina = b.propina;
+    }
+
+    private Pedido(Pedido original) {
+        this.id = GeneradorConsecutivo.obtenerInstancia().siguiente();
+        this.cliente = original.cliente;
+        this.tipoEntrega = original.tipoEntrega;
+        this.direccion = original.direccion;
+        this.notas = original.notas;
+        this.propina = original.propina;
+        this.items = new ArrayList<>(original.items);
+        this.cupon = 0;
+    }
+
+    public Pedido clonar() {
+        return new Pedido(this);
+    }
+
+    public void agregarItem(ItemPedido item) {
+        items.add(item);
     }
 
     public String getId() {
