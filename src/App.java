@@ -65,5 +65,13 @@ public class App {
         efectivo.procesar(p2);
         tarjeta.procesar(p3);   // supera el limite de la tarjeta
         pse.procesar(p3);       // PSE si lo aprueba
+
+        // INICIO PUNTO 4 (extension sin modificar codigo existente)
+        System.out.println();
+        System.out.println("=== 4. Extension sin modificar codigo existente ===");
+        ProcesadorPago nequi = new ProcesadorNequi();
+        nequi.procesar(p2);
+        nequi.procesar(p3);
+        // FIN PUNTO 4
     }
 }
